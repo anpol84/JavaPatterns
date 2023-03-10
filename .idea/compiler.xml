@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="practice11" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gs-maven" target="17" />
+      <module name="practice10" target="17" />
+      <module name="practice10.main" target="17" />
+      <module name="practice10.src" target="17" />
+      <module name="practice10.src.main" target="17" />
+      <module name="practice10.src.test" target="17" />
+      <module name="practice10.test" target="17" />
+      <module name="practice11" target="17" />
+      <module name="practice11.main" target="17" />
+      <module name="practice11.src" target="17" />
+      <module name="practice11.src.main" target="17" />
+      <module name="practice11.src.test" target="17" />
+      <module name="practice11.test" target="17" />
+      <module name="practice9" target="17" />
+      <module name="practice9.main" target="17" />
+      <module name="practice9.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gs-maven" options="-parameters" />
+      <module name="practice11" options="-parameters" />
+    </option>
+  </component>
+</project>

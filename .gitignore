@@ -1,0 +1,7 @@
+# Project exclude paths
+/out/
+/src/mirea/practice/practice9/.gradle/
+/src/mirea/practice/practice10/.gradle/
+/src/mirea/practice/practice10/src/build/
+/src/mirea/practice/practice10/src/build/classes/java/main/
+/src/mirea/practice/practice11/target/

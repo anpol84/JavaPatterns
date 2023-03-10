@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="practice10:main" external.linked.project.path="$MODULE_DIR$/../../src/mirea/practice/practice10" external.root.project.path="$MODULE_DIR$/../../src/mirea/practice/practice10" external.system.id="GRADLE" external.system.module.group="com.example" external.system.module.type="sourceSet" external.system.module.version="0.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/../../src/mirea/practice/practice10/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/mirea/practice/practice10/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/mirea/practice/practice10/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/mirea/practice/practice10/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.testng:testng:7.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:6.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.33" level="project" />
+    <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.inject:guice:no_aop:4.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:6.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.4.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.19.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:2.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:6.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:19.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:6.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:6.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:6.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.4.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.19.0" level="project" />
+  </component>
+</module>

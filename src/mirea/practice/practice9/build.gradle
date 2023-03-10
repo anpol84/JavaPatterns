@@ -1,0 +1,48 @@
+
+plugins{
+    id 'java'
+
+}
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+jar {
+    baseName = 'test'
+    destinationDir = file("test")
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
+task run{
+    doLast{
+        exec {
+            commandLine 'docker', 'build', '-t', 'image_for_jar', './test'
+        }
+        exec {
+            commandLine 'docker', 'run', '-p', '80:80', '--name', 'container_for_jar', 'image_for_jar'
+        }
+
+        exec {
+            commandLine 'docker', 'rm', 'container_for_jar'
+        }
+        exec {
+            commandLine 'docker', 'rmi', 'image_for_jar'
+        }
+    }
+}
+
+run.dependsOn jar
+
+
+
+
+
+
+
+
