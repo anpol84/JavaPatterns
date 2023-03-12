@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="practice11" />
+        <module name="practice12" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="practice11.src.main" target="17" />
       <module name="practice11.src.test" target="17" />
       <module name="practice11.test" target="17" />
+      <module name="practice12" target="1.8" />
       <module name="practice9" target="17" />
       <module name="practice9.main" target="17" />
       <module name="practice9.test" target="17" />
@@ -32,6 +34,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="gs-maven" options="-parameters" />
       <module name="practice11" options="-parameters" />
+      <module name="practice12" options="-parameters" />
     </option>
   </component>
 </project>
