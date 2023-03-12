@@ -17,7 +17,7 @@
       <module name="practice10.src.main" target="17" />
       <module name="practice10.src.test" target="17" />
       <module name="practice10.test" target="17" />
-      <module name="practice11" target="17" />
+      <module name="practice11" target="1.8" />
       <module name="practice11.main" target="17" />
       <module name="practice11.src" target="17" />
       <module name="practice11.src.main" target="17" />
