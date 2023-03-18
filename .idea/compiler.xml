@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="practice14" />
+        <module name="practice15" />
         <module name="practice12" />
         <module name="practice13" />
         <module name="practice11" />
@@ -30,6 +31,7 @@
       <module name="practice12" target="1.8" />
       <module name="practice13" target="1.8" />
       <module name="practice14" target="1.8" />
+      <module name="practice15" target="1.8" />
       <module name="practice9" target="17" />
       <module name="practice9.main" target="17" />
       <module name="practice9.test" target="17" />
@@ -42,6 +44,7 @@
       <module name="practice12" options="-parameters" />
       <module name="practice13" options="-parameters" />
       <module name="practice14" options="-parameters" />
+      <module name="practice15" options="-parameters" />
     </option>
   </component>
 </project>

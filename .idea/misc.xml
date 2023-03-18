@@ -13,13 +13,14 @@
         <option value="$PROJECT_DIR$/src/mirea/practice/practice12/pom.xml" />
         <option value="$PROJECT_DIR$/src/mirea/practice/practice13/pom.xml" />
         <option value="$PROJECT_DIR$/src/mirea/practice/practice14/pom.xml" />
+        <option value="$PROJECT_DIR$/src/mirea/practice/practice15/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectKey">
     <option name="state" value="project://e2804f05-5315-4fc6-a121-c522a6c26470" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="19" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
