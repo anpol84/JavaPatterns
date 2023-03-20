@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class ItemService {
 
     private final ItemRepo itemRepo;
-
+    @Autowired
     public ItemService(ItemRepo itemRepo){
         this.itemRepo = itemRepo;
     }

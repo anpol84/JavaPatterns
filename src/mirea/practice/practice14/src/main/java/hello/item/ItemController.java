@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class ItemController {
 
     private ItemService itemService;
+    @Autowired
     public ItemController(ItemService itemService){
         this.itemService = itemService;
     }

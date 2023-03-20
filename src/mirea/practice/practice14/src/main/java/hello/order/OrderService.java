@@ -8,9 +8,8 @@ public class OrderService {
 
     private OrderRepo orderRepo;
 
-    public OrderService() {
-    }
 
+    @Autowired
     public OrderService(OrderRepo orderRepo){
         this.orderRepo = orderRepo;
     }

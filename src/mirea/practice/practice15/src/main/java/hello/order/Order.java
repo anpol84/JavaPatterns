@@ -6,6 +6,12 @@ import java.util.Date;
 @Table(name = "orders")
 public class Order {
     private Date orderDate;
+
+    public Order(Date orderDate) {
+        this.orderDate = orderDate;
+    }
+    public Order(){}
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

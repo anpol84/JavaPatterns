@@ -26,7 +26,7 @@ public class OrderRepo{
 
     public void save(Order order) {
         String sql =
-                "INSERT INTO orders (name, address) VALUES (?, ?)";
+                "INSERT INTO orders (order_date) VALUES (?)";
         jdbcTemplate.update(
                 sql,
                 order.getOrderDate()

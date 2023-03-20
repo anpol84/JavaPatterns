@@ -10,6 +10,12 @@ public class Item {
     private Date creationDate;
     private double price;
 
+    public Item(String name, Date creationDate, double price) {
+        this.name = name;
+        this.creationDate = creationDate;
+        this.price = price;
+    }
+
     public Item() {
     }
 

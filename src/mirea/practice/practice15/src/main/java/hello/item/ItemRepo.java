@@ -28,7 +28,7 @@ public class ItemRepo {
 
     public void save(Item item) {
         String sql =
-                "INSERT INTO items (name, address) VALUES (?, ?)";
+                "INSERT INTO items (name, creation_date, price) VALUES (?, ?, ?)";
         jdbcTemplate.update(
                 sql,
                 item.getName(),
