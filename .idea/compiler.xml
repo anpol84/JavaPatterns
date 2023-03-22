@@ -12,6 +12,8 @@
         <module name="practice12" />
         <module name="practice13" />
         <module name="practice11" />
+        <module name="practice16" />
+        <module name="practice17" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +34,8 @@
       <module name="practice13" target="1.8" />
       <module name="practice14" target="1.8" />
       <module name="practice15" target="1.8" />
+      <module name="practice16" target="1.8" />
+      <module name="practice17" target="1.8" />
       <module name="practice9" target="17" />
       <module name="practice9.main" target="17" />
       <module name="practice9.test" target="17" />
@@ -45,6 +49,8 @@
       <module name="practice13" options="-parameters" />
       <module name="practice14" options="-parameters" />
       <module name="practice15" options="-parameters" />
+      <module name="practice16" options="-parameters" />
+      <module name="practice17" options="-parameters" />
     </option>
   </component>
 </project>

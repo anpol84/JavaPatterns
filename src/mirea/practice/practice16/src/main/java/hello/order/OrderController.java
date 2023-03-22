@@ -3,6 +3,8 @@ package hello.order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -11,7 +13,7 @@ public class OrderController {
 
     public OrderController() {
     }
-
+    @Autowired
     public OrderController(OrderService orderService){
         this.orderService = orderService;
     }
@@ -20,11 +22,15 @@ public class OrderController {
         orderService.save(order);
     }
     @GetMapping
-    public Iterable<Order> findAll(){
+    public List<Order> findAll(){
         return orderService.findAll();
     }
     @DeleteMapping
     public void deleteById(@RequestParam Long id){
         orderService.deleteById(id);
+    }
+    @GetMapping("/{id}")
+    public Order findById(@PathVariable Long id) {
+        return orderService.findById(id);
     }
 }

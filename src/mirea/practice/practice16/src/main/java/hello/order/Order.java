@@ -1,16 +1,25 @@
 package hello.order;
 
+import hello.item.Item;
+
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
 @Entity
 @Table(name = "orders")
 public class Order {
+    @Column(name="order_date")
     private Date orderDate;
 
     public Order(Date orderDate) {
         this.orderDate = orderDate;
     }
     public Order(){}
+    @OneToMany(mappedBy = "order")
+    private List<Item> items = new ArrayList<>();
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,15 +37,15 @@ public class Order {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public List<Item> getItems() {
+        return items;
     }
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "orderDate=" + orderDate +
-                ", id=" + id +
-                '}';
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

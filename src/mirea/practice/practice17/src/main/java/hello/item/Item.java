@@ -1,16 +1,33 @@
 package hello.item;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import hello.order.Order;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "items")
 public class Item {
+
     private String name;
-    private Date creationDate;
+    private String creationDate;
     private double price;
 
-    public Item(String name, Date creationDate, double price) {
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="order_id")
+    private Order order;
+
+
+    public Item(String name, String creationDate, double price) {
         this.name = name;
         this.creationDate = creationDate;
         this.price = price;
@@ -31,11 +48,11 @@ public class Item {
         this.name = name;
     }
 
-    public Date getCreationDate() {
+    public String getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
+    public void setCreationDate(String creationDate) {
         this.creationDate = creationDate;
     }
 
@@ -61,6 +78,7 @@ public class Item {
                 "name='" + name + '\'' +
                 ", creationDate=" + creationDate +
                 ", price=" + price +
+                ", order=" + order +
                 ", id=" + id +
                 '}';
     }

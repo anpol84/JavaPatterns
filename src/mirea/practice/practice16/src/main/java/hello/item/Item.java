@@ -1,14 +1,30 @@
 package hello.item;
 
+import hello.order.Order;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "items")
 public class Item {
+
     private String name;
     private Date creationDate;
     private double price;
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="order_id")
+    private Order order;
+
 
     public Item(String name, Date creationDate, double price) {
         this.name = name;
@@ -53,15 +69,5 @@ public class Item {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    @Override
-    public String toString() {
-        return "Item{" +
-                "name='" + name + '\'' +
-                ", creationDate=" + creationDate +
-                ", price=" + price +
-                ", id=" + id +
-                '}';
     }
 }
