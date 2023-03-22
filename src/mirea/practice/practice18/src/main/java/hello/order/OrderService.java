@@ -9,12 +9,14 @@ import java.util.List;
 public class OrderService {
 
     private OrderRepo orderRepo;
+    private MyOrderRepo myOrderRepo;
 
     public OrderService() {
     }
     @Autowired
-    public OrderService(OrderRepo orderRepo){
+    public OrderService(OrderRepo orderRepo, MyOrderRepo myOrderRepo){
         this.orderRepo = orderRepo;
+        this.myOrderRepo = myOrderRepo;
     }
 
     public void save(Order order){
@@ -29,9 +31,9 @@ public class OrderService {
         orderRepo.deleteById(id);
     }
     public Order findById(Long id) {
-        return orderRepo.findById(id);
+        return myOrderRepo.findById(id);
     }
     public List<Order> filter(String date){
-        return orderRepo.filter(date);
+        return myOrderRepo.filter(date);
     }
 }

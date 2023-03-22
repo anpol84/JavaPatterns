@@ -1,5 +1,6 @@
 package hello.item;
 
+import hello.order.MyOrderRepo;
 import hello.order.Order;
 import hello.order.OrderRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,15 +10,24 @@ import java.util.List;
 
 @Service
 public class ItemService {
-    @Autowired
+
     private ItemRepo itemRepo;
 
-    @Autowired
-    private OrderRepo orderRepo;
 
+    private OrderRepo orderRepo;
+    private MyOrderRepo myOrderRepo;
+
+    private MyItemRepo myItemRepo;
+    @Autowired
+    public ItemService(ItemRepo itemRepo, OrderRepo orderRepo, MyItemRepo myItemRepo, MyOrderRepo myOrderRepo) {
+        this.itemRepo = itemRepo;
+        this.orderRepo = orderRepo;
+        this.myItemRepo = myItemRepo;
+        this.myOrderRepo = myOrderRepo;
+    }
 
     public void save(Item item, Long id) {
-        item.setOrder(orderRepo.findById(id));
+        item.setOrder(myOrderRepo.findById(id));
 
         itemRepo.save(item);
     }
@@ -30,12 +40,12 @@ public class ItemService {
         itemRepo.deleteById(id);
     }
     public Item findById(Long id){
-        return itemRepo.findById(id);
+        return myItemRepo.findById(id);
     }
     public Order getOrder(Long id){
         return findById(id).getOrder();
     }
     public List<Item> filter(String name, String date, Double price){
-        return itemRepo.filter(name, date, price);
+        return myItemRepo.filter(name, date, price);
     }
 }
