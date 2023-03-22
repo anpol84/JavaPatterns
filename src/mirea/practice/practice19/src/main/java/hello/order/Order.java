@@ -10,6 +10,15 @@ import java.util.List;
 @Entity
 @Table(name = "orders")
 public class Order {
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderDate='" + orderDate + '\'' +
+                ", items=" + items +
+                ", id=" + id +
+                '}';
+    }
+
     @Column(name="order_date")
     private String orderDate;
 
@@ -43,15 +52,6 @@ public class Order {
 
     public void setItems(List<Item> items) {
         this.items = items;
-    }
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "orderDate='" + orderDate + '\'' +
-                ", items=" + items +
-                ", id=" + id +
-                '}';
     }
 
     public void setId(Long id) {

@@ -13,6 +13,7 @@
         <module name="practice13" />
         <module name="practice11" />
         <module name="practice18" />
+        <module name="practice19" />
         <module name="practice16" />
         <module name="practice17" />
       </profile>
@@ -39,6 +40,8 @@
       <module name="practice17" target="1.8" />
       <module name="practice17 (1)" target="1.8" />
       <module name="practice18" target="1.8" />
+      <module name="practice18 (1)" target="1.8" />
+      <module name="practice19" target="1.8" />
       <module name="practice9" target="17" />
       <module name="practice9.main" target="17" />
       <module name="practice9.test" target="17" />
@@ -56,6 +59,8 @@
       <module name="practice17" options="-parameters" />
       <module name="practice17 (1)" options="-parameters" />
       <module name="practice18" options="-parameters" />
+      <module name="practice18 (1)" options="-parameters" />
+      <module name="practice19" options="-parameters" />
     </option>
   </component>
 </project>
