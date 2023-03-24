@@ -10,7 +10,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="practice18" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -78,7 +80,7 @@
     <orderEntry type="library" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:txw2:2.3.6" level="project" />
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.3.16" level="project" />
@@ -88,5 +90,12 @@
     <orderEntry type="library" name="Maven: com.mysql:mysql-connector-j:8.0.32" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.21.9" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.22" level="project" />
+    <orderEntry type="library" name="Maven: de.vinado.spring:dkim-javamail:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: net.markenwerk:utils-mail-dkim:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: net.iharder:base64:2.3.9" level="project" />
+    <orderEntry type="library" name="Maven: net.markenwerk:utils-data-fetcher:4.0.2" level="project" />
+    <orderEntry type="library" name="Maven: net.markenwerk:commons-nulls:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.mail:jakarta.mail:1.6.7" level="project" />
+    <orderEntry type="library" name="Maven: net.i2p.crypto:eddsa:0.3.0" level="project" />
   </component>
 </module>

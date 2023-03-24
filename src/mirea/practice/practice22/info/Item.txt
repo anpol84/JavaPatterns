@@ -1,0 +1,5 @@
+ItemDTO{id=7, name='item1', creationDate='1973-11-30 00:32:54', order=null}
+ItemDTO{id=8, name='item2', creationDate='2009-02-14 02:29:06', order=null}
+ItemDTO{id=11, name='item4', creationDate='2022-08-10 12:34:52', order=null}
+ItemDTO{id=12, name='item5', creationDate='2012-08-10 12:34:52', order=null}
+ItemDTO{id=13, name='item6', creationDate='2011-08-10 12:34:52', order=null}
