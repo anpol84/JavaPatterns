@@ -14,7 +14,7 @@ import java.util.Properties;
 public class EmailService {
     private final Properties props = new Properties();
     private final String username = "polakovandrej327@mail.ru";
-    private final String password = "1yagFyGz358xnzYbHMa5";
+    private final String password = "3CUub11dTYFkt9gEBxcT";
     public EmailService() {
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");

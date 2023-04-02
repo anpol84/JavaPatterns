@@ -10,6 +10,7 @@
         <module name="practice14" />
         <module name="practice15" />
         <module name="practice12" />
+        <module name="practice23" />
         <module name="practice13" />
         <module name="practice21" />
         <module name="practice11" />
@@ -49,6 +50,7 @@
       <module name="practice21" target="1.8" />
       <module name="practice21 (1)" target="1.8" />
       <module name="practice22" target="16" />
+      <module name="practice23" target="16" />
       <module name="practice9" target="17" />
       <module name="practice9.main" target="17" />
       <module name="practice9.test" target="17" />
@@ -57,21 +59,22 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="gs-maven" options="-parameters" />
-      <module name="practice11" options="-parameters" />
-      <module name="practice12" options="-parameters" />
-      <module name="practice13" options="-parameters" />
+      <module name="practice11" options="" />
+      <module name="practice12" options="" />
+      <module name="practice13" options="" />
       <module name="practice14" options="-parameters" />
-      <module name="practice15" options="-parameters" />
+      <module name="practice15" options="" />
       <module name="practice16" options="-parameters" />
       <module name="practice17" options="-parameters" />
       <module name="practice17 (1)" options="-parameters" />
-      <module name="practice18" options="-parameters" />
+      <module name="practice18" options="" />
       <module name="practice18 (1)" options="-parameters" />
-      <module name="practice19" options="-parameters" />
-      <module name="practice20" options="-parameters" />
+      <module name="practice19" options="" />
+      <module name="practice20" options="" />
       <module name="practice21" options="-parameters" />
       <module name="practice21 (1)" options="-parameters" />
       <module name="practice22" options="-parameters" />
+      <module name="practice23" options="-parameters" />
     </option>
   </component>
 </project>

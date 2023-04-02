@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.5
+    environment:
+      MYSQL_ROOT_PASSWORD: Buffon1326902
+      MYSQL_DATABASE: pw14
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - item-network
+
+  server:
+    build: .
+    ports:
+      - '9090:9090'
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/pw14
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Buffon1326902
+      SERVER_PORT: 9090
+    depends_on:
+      - mysql
+    networks:
+      - item-network
+
+networks:
+  item-network:
+
+volumes:
+  mysql-data:
