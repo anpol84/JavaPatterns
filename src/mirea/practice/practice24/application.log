@@ -1,0 +1,33 @@
+186  [main] INFO  hello.item.ItemService – filtering item
+207  [main] INFO  hello.item.ItemService – finding all items
+211  [main] INFO  hello.item.ItemService – finding item by id 1
+218  [main] INFO  hello.item.ItemService – saving item Item{name='null', creationDate='null', price=0.0, order=null, id=1}
+227  [main] INFO  hello.item.ItemService – deleting item with id 1
+230  [main] INFO  hello.item.ItemService – getting order by id 1
+231  [main] INFO  hello.item.ItemService – finding item by id 1
+145  [main] INFO  hello.item.ItemService – filtering item
+165  [main] INFO  hello.item.ItemService – finding all items
+171  [main] INFO  hello.item.ItemService – finding item by id 1
+178  [main] INFO  hello.item.ItemService – saving item Item{name='item1', creationDate='1231424314', price=1245.0, order=null, id=1}
+186  [main] INFO  hello.item.ItemService – deleting item with id 1
+190  [main] INFO  hello.item.ItemService – getting order by id 1
+190  [main] INFO  hello.item.ItemService – finding item by id 1
+146  [main] INFO  hello.item.ItemService – filtering item
+168  [main] INFO  hello.item.ItemService – finding all items
+172  [main] INFO  hello.item.ItemService – finding item by id 1
+180  [main] INFO  hello.item.ItemService – saving item Item{name='item1', creationDate='1231424314', price=1245.0, order=null, id=1}
+188  [main] INFO  hello.item.ItemService – deleting item with id 1
+192  [main] INFO  hello.item.ItemService – getting order by id 1
+192  [main] INFO  hello.item.ItemService – finding item by id 1
+150  [main] INFO  hello.item.ItemService – filtering item
+171  [main] INFO  hello.item.ItemService – finding all items
+175  [main] INFO  hello.item.ItemService – finding item by id 1
+182  [main] INFO  hello.item.ItemService – saving item Item{name='item1', creationDate='1231424314', price=1245.0, order=null, id=1}
+192  [main] INFO  hello.item.ItemService – deleting item with id 1
+195  [main] INFO  hello.item.ItemService – getting order by id 1
+195  [main] INFO  hello.item.ItemService – finding item by id 1
+143  [main] INFO  hello.order.OrderService – finding all orders
+171  [main] INFO  hello.order.OrderService – saving order Order{orderDate='null', items=[], id=null}
+181  [main] INFO  hello.order.OrderService – finding order by id 1
+184  [main] INFO  hello.order.OrderService – deleting order by id 1
+187  [main] INFO  hello.order.OrderService – filtering order

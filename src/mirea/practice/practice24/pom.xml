@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>practice23</artifactId>
+    <artifactId>practice24</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>practice23</name>
+    <name>practice24</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>8</java.version>
@@ -52,6 +52,14 @@
         <dependency>
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
         </dependency>
     </dependencies>
     <build>
